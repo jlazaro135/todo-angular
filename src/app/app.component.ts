@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { tasks, Tasks } from './../assets/tasks'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'todo-list';
+  tasks: Tasks[]
+
+  constructor(){
+    this.tasks = []
+  }
+
+  ngOnInit(){
+    this.tasks = tasks
+  }
 }
