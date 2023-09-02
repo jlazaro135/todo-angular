@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-task-counter',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./task-counter.component.css']
 })
 export class TaskCounterComponent {
-
+  @Input() tasksCount!: number;
 }

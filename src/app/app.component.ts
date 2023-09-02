@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { tasks, Tasks } from './../assets/tasks'
+import { tasks, Task } from './../assets/tasks'
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import { tasks, Tasks } from './../assets/tasks'
 })
 export class AppComponent {
   title = 'todo-list';
-  tasks: Tasks[]
+  tasks: Task[]
 
   constructor(){
     this.tasks = []
