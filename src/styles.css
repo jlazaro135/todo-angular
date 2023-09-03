@@ -16,8 +16,19 @@ app-root{
     display: block;
 }
 
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; /* we need these for full-screen effect */
+    width: 100%;
+  }
+
 @layer base {
+    .is-priority{
+        @apply bg-pink-200 border-b-2 !border-pink-600
+    }
     .is-done{
-        @apply bg-green-200 line-through;
+        @apply !bg-green-200 line-through !border-green-600
     }
 }

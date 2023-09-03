@@ -7,4 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class TaskCounterComponent {
   @Input() tasksCount!: number;
+  @Input() tasksDone!: number;
+  @Input() tasksDonePercentage!: any;
 }

@@ -13,15 +13,10 @@
         </label>
       </div>
       <div class="text-center">
-        <p class="text-xs">¿Es prioritaria?</p>
         <div class="flex justify-center px-4 gap-3">
           <div>
-            <input class="mr-1" type="radio" name="priority" id="yes">
-            <label for="yes">Sí</label>
-          </div>
-          <div>
-            <input class="mr-1" type="radio" name="priority" id="no">
-            <label for="no">No</label>
+            <input [(ngModel)]="checkboxValue" class="mr-1" type="checkbox" name="priority" id="yes" value="yes">
+            <label class="text-sm" for="yes">Prioritaria</label>
           </div>
         </div>
       </div>

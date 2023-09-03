@@ -1,3 +1,5 @@
-<div class="py-4 bg-green-500 text-white text-center text-xl">
+<div class="py-4 bg-green-500 text-white text-center text-sm flex flex-col sm:flex-row gap-2 justify-around flex-wrap">
     <span>Tareas registradas: <span class="font-bold">{{ tasksCount }}</span></span>
+    <span>Tareas realizadas: <span class="font-bold">{{ tasksDone }}</span></span>
+    <span><span class="font-bold">{{tasksDonePercentage}}%</span> completado</span>
 </div>
