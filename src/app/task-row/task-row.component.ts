@@ -19,4 +19,11 @@ export class TaskRowComponent {
       foundTask.isDone = true
     } 
   }
+
+  deleteTask(){
+    const foundTask: Task | undefined = tasks.find(t => t.id === this.task.id)
+    if(foundTask){
+      foundTask.isDeleted = true
+    }
+  }
 }

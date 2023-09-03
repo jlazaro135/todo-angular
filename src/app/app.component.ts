@@ -17,4 +17,8 @@ export class AppComponent {
   ngOnInit(){
     this.tasks = tasks
   }
+
+  filterActiveTasks(){
+    return tasks.filter(t => !t.isDeleted).length
+  }
 }

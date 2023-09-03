@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TaskRowComponent } from './task-row/task-row.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { TaskCounterComponent } from './task-counter/task-counter.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TaskCounterComponent } from './task-counter/task-counter.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

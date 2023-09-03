@@ -2,7 +2,7 @@
   <h1 class="text-5xl font-bold text-center text-teal-900">To Do List</h1>
   <div class="w-full lg:max-w-2xl mx-auto min-h-[500px] bg-white rounded-md shadow-md shadow-teal-500">
     <app-search-bar />
-    <app-task-counter [tasksCount]="tasks.length" />
+    <app-task-counter [tasksCount]="filterActiveTasks()" />
     <div class="">
       <app-task-row
       *ngFor="let task of tasks" 

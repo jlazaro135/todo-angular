@@ -6,33 +6,14 @@ export interface Task {
     isDeleted: boolean
 }
 
-export const tasks:Task[] = [
-    {
-        id: 1,
-        text: 'esto es una tarea',
-        isPriority: false,
-        isDone: false,
-        isDeleted: false
-    },
-    {
-        id: 2,
-        text: 'esto es una tarea2',
-        isPriority: false,
-        isDone: false,
-        isDeleted: false
-    },
-    {
-        id: 3,
-        text: 'esto es una tarea3',
-        isPriority: false,
-        isDone: false,
-        isDeleted: false
-    },
-    {
-        id: 4,
-        text: 'esto es una tarea4',
-        isPriority: false,
-        isDone: false,
-        isDeleted: false
-    },
-]
+export const tasks:Task[] = []
+
+export class Task {
+    constructor(id: number, text: string, isPriority: boolean, isDone: boolean = false, isDeleted: boolean = false) {
+        this.id = id;
+        this.text = text;
+        this.isPriority = isPriority;
+        this.isDone = isDone;
+        this.isDeleted = isDeleted;
+      }
+} 
